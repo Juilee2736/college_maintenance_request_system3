@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        College Maintenance Request System
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body class="app-page">
+
+
+<header class="app-header">
+
+    <div class="college-brand">
+
+        <img
+            src="phcet.jpeg"
+            alt="College Logo"
+        >
+
+        <div>
+
+            <h2>
+                Pillai HOC College of Engineering and Technology
+            </h2>
+
+            <p>
+                College Maintenance Request System
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="app-nav">
+
+        <a
+            class="active"
+            href="student-dashboard.html"
+        >
+            🏠 Dashboard
+        </a>
+
+        <a href="report.html">
+            🔧 New Request
+        </a>
+
+        <a href="requests.html">
+            📋 My Requests
+        </a>
+
+        <button
+            type="button"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main class="page-shell">
+
+
+    <!-- WELCOME -->
+
+    <section class="welcome-banner">
+
+        <div>
+
+           <h2 id="welcomeMessage">Welcome!👋</h2>
+            <p>
+                Keep your campus safe, clean and well-maintained.
+            </p>
+
+        </div>
+
+        <div class="welcome-icon">
+            🏫
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📋
+            </div>
+
+            <h3>
+                Total Requests
+            </h3>
+
+            <strong id="studentTotal">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⏳
+            </div>
+
+            <h3>
+                Pending
+            </h3>
+
+            <strong id="studentPending">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🔧
+            </div>
+
+            <h3>
+                In Progress
+            </h3>
+
+            <strong id="studentProgress">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ✅
+            </div>
+
+            <h3>
+                Completed
+            </h3>
+
+            <strong id="studentCompleted">
+                0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="dashboard-options">
+
+
+        <a
+            class="feature-card"
+            href="report.html"
+        >
+
+            <div class="feature-icon">
+                🔧
+            </div>
+
+            <h3>
+                New Maintenance Request
+            </h3>
+
+            <p>
+                Report a new maintenance problem.
+            </p>
+
+        </a>
+
+
+        <a
+            class="feature-card"
+            href="requests.html"
+        >
+
+            <div class="feature-icon">
+                📋
+            </div>
+
+            <h3>
+                My Requests
+            </h3>
+
+            <p>
+                View and track requests submitted by you.
+            </p>
+
+        </a>
+
+
+        <a
+            class="feature-card"
+            href="#track-request"
+        >
+
+            <div class="feature-icon">
+                🔎
+            </div>
+
+            <h3>
+                Track Request
+            </h3>
+
+            <p>
+                Check the latest status using your Request ID.
+            </p>
+
+        </a>
+
+
+        <a
+            class="feature-card"
+            href="maintenance-guidelines.html"
+        >
+
+            <div class="feature-icon">
+                📖
+            </div>
+
+            <h3>
+                Maintenance Guidelines
+            </h3>
+
+            <p>
+                Follow the correct procedure when reporting issues.
+            </p>
+
+        </a>
+
+
+        <a
+            class="feature-card"
+            href="help-support.html"
+        >
+
+            <div class="feature-icon">
+                ❓
+            </div>
+
+            <h3>
+                Help & Support
+            </h3>
+
+            <p>
+                Find answers and get assistance.
+            </p>
+
+        </a>
+
+        <a
+    class="feature-card"
+    href="recent-requests.html"
+>
+
+    <div class="feature-icon">
+        🕒
+    </div>
+
+    <h3>
+        Recent Maintenance Requests
+    </h3>
+
+    <p>
+        View recently submitted maintenance requests.
+    </p>
+
+</a>
+
+    </section>
+
+
+    <!-- TRACK -->
+
+    <section
+        class="content-card track-card"
+        id="track-request"
+    >
+
+        <h2>
+            Track Request
+        </h2>
+
+        <p>
+            Enter your Request ID to check the current status.
+        </p>
+
+
+        <div class="track-form">
+
+            <input
+                id="trackId"
+                type="text"
+                placeholder="Example: MR001"
+            >
+
+            <button
+                class="dark-btn"
+                type="button"
+                onclick="trackStudentRequest()"
+            >
+                Track
+            </button>
+
+        </div>
+
+
+        <div id="trackResult"></div>
+
+    </section>
+
+</main>
+
+
+<footer class="simple-footer">
+
+    Pillai HOC College of Engineering and Technology
+    &nbsp; | &nbsp;
+    College Maintenance Request System
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

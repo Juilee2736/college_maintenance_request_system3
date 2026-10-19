@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Recent Maintenance Requests
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body class="app-page">
+
+
+<header class="app-header">
+
+    <div class="college-brand">
+
+        <img
+            src="phcet.jpeg"
+            alt="College Logo"
+        >
+
+        <div>
+
+            <h2>
+                Pillai HOC College of Engineering and Technology
+            </h2>
+
+            <p>
+                College Maintenance Request System
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="app-nav">
+
+        <a href="student-dashboard.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="report.html">
+            🔧 New Request
+        </a>
+
+        <a href="requests.html">
+            📋 My Requests
+        </a>
+
+        <button
+            type="button"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main class="page-shell">
+
+    <section class="page-heading">
+
+        <h1>
+            Recent Maintenance Requests
+        </h1>
+
+        <p>
+            View the latest maintenance requests submitted in the system.
+        </p>
+
+    </section>
+
+
+    <section class="content-card">
+
+        <div id="recentRequests"></div>
+
+    </section>
+
+</main>
+
+
+<footer class="simple-footer">
+
+    Pillai HOC College of Engineering and Technology
+    &nbsp; | &nbsp;
+    College Maintenance Request System
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

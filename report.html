@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        New Maintenance Request
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body class="app-page">
+
+
+<header class="app-header">
+
+    <div class="college-brand">
+
+        <img
+            src="phcet.jpeg"
+            alt="College Logo"
+        >
+
+        <div>
+
+            <h2>
+                Pillai HOC College of Engineering and Technology
+            </h2>
+
+            <p>
+                College Maintenance Request System
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav class="app-nav">
+
+        <a href="student-dashboard.html">
+            🏠 Dashboard
+        </a>
+
+        <a
+            class="active"
+            href="report.html"
+        >
+            🔧 New Request
+        </a>
+
+        <a href="requests.html">
+            📋 My Requests
+        </a>
+
+        <button
+            type="button"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main class="page-shell narrow-shell">
+
+
+    <section class="page-heading">
+
+        <h1>
+            Report Maintenance Issue
+        </h1>
+
+        <p>
+            Fill in the details below to submit a new maintenance request.
+        </p>
+
+    </section>
+
+
+    <section class="form-card">
+
+        <form id="requestForm">
+
+
+            <label for="category">
+                Issue Category
+            </label>
+
+            <select
+                id="category"
+                required
+            >
+
+                <option value="">
+                    Select category
+                </option>
+
+                <option>
+                    Electrical
+                </option>
+
+                <option>
+                    Plumbing
+                </option>
+
+                <option>
+                    Furniture
+                </option>
+
+                <option>
+                    Washroom
+                </option>
+
+                <option>
+                    Classroom
+                </option>
+
+                <option>
+                    Cleanliness
+                </option>
+
+                <option>
+                    Network / Internet
+                </option>
+
+                <option>
+                    Other
+                </option>
+
+            </select>
+
+
+            <label for="title">
+                Issue Title
+            </label>
+
+            <input
+                id="title"
+                type="text"
+                placeholder="Example: Ceiling fan not working"
+                required
+            >
+
+
+            <label for="location">
+                Room / Location
+            </label>
+
+            <input
+                id="location"
+                type="text"
+                placeholder="Example: Room A102"
+                required
+            >
+
+
+            <label for="priority">
+                Priority
+            </label>
+
+            <select id="priority">
+
+                <option value="Low">
+                    Low
+                </option>
+
+                <option
+                    value="Medium"
+                    selected
+                >
+                    Medium
+                </option>
+
+                <option value="High">
+                    High
+                </option>
+
+            </select>
+
+
+            <label for="description">
+                Problem Description
+            </label>
+
+            <textarea
+                id="description"
+                placeholder="Describe the problem clearly..."
+                required
+            ></textarea>
+
+
+            <label for="photo">
+                Upload Evidence Photo
+            </label>
+
+            <input
+                id="photo"
+                type="file"
+                accept="image/*"
+            >
+
+
+            <div
+                id="photoPreview"
+                class="photo-preview"
+            ></div>
+
+
+            <p
+                id="formMessage"
+                class="form-message"
+            ></p>
+
+
+            <button
+                type="submit"
+                class="dark-btn full-width"
+            >
+                Submit Maintenance Request
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer class="simple-footer">
+
+    College Maintenance Request System
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

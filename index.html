@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        College Maintenance Request System
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body class="login-page">
+
+    <div class="login-container">
+
+        <!-- BRAND -->
+
+        <div class="login-brand">
+
+            <img
+                src="phcet.jpeg"
+                alt="Pillai HOC College Logo"
+            >
+
+            <div>
+
+                <h1>
+                    Pillai HOC College of Engineering and Technology
+                </h1>
+
+                <p>
+                    College Maintenance Request System
+                </p>
+
+                <p style="
+                    margin-top:12px;
+                    color:#718096;
+                    font-weight:400;
+                ">
+                    Report • Track • Resolve
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <div class="login-card">
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p class="login-subtitle">
+                Login to access the maintenance portal
+            </p>
+
+
+            <div class="login-tabs">
+
+                <button
+                    type="button"
+                    class="login-tab active"
+                    id="studentTab"
+                    onclick="selectLoginType('student')"
+                >
+                    👨‍🎓 Student / Staff
+                </button>
+
+                <button
+                    type="button"
+                    class="login-tab"
+                    id="adminTab"
+                    onclick="selectLoginType('admin')"
+                >
+                    👨‍💼 Admin
+                </button>
+
+            </div>
+
+
+            <form id="loginForm">
+
+                <input
+                    type="hidden"
+                    id="loginType"
+                    value="student"
+                >
+
+
+                <label for="loginId">
+                    Login ID
+                </label>
+
+                <input
+                    type="text"
+                    id="loginId"
+                    placeholder="Enter Email Address"
+                    autocomplete="username"
+                    required
+                >
+
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter Password"
+                    autocomplete="current-password"
+                    required
+                >
+
+
+                <p
+                    id="loginError"
+                    class="error-message"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn full-btn"
+                >
+                    Login to Portal
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

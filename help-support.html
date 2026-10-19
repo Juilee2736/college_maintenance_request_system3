@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        College Maintenance Request System
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="app-page help-support-page">
+
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header class="app-header">
+
+
+        <!-- COLLEGE BRAND -->
+
+        <div class="college-brand">
+
+            <img src="phcet.jpeg" alt="College Logo" class="college-logo">
+
+            <div>
+
+                <h2>
+                    Pillai HOC College of Engineering and Technology
+                </h2>
+
+                <p>
+                    College Maintenance Request System
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================
+             NAVIGATION
+        =========================== -->
+
+        <nav class="app-nav">
+
+
+            <a
+                class="active"
+                href="student-dashboard.html"
+            >
+                Dashboard
+            </a>
+
+
+            <a href="report.html">
+                New Request
+            </a>
+
+
+            <a href="requests.html">
+                My Requests
+            </a>
+
+
+            <button
+    type="button"
+    onclick="logout()"
+>
+    Logout
+</button>
+
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==========================
+         MAIN CONTENT
+    =========================== -->
+
+    <main class="page-shell">
+
+
+        <!-- PAGE HEADING -->
+
+        <section class="page-heading">
+
+            <h1>
+                Help &amp; Support
+            </h1>
+
+            <p>
+                Get help with submitting and tracking maintenance requests.
+            </p>
+
+        </section>
+
+
+        <!-- ==========================
+             HOW TO USE
+        =========================== -->
+
+        <section class="content-card">
+
+            <h2>
+                How to Submit a Maintenance Request
+            </h2>
+
+            <p>
+                Follow these simple steps to report a maintenance problem:
+            </p>
+
+            <ol>
+
+                <li>
+                    Click on <strong>New Request</strong>.
+                </li>
+
+                <li>
+                    Enter a short and clear title for the problem.
+                </li>
+
+                <li>
+                    Enter the correct location, room number or building.
+                </li>
+
+                <li>
+                    Select the appropriate maintenance category.
+                </li>
+
+                <li>
+                    Describe the problem clearly.
+                </li>
+
+                <li>
+                    Upload a photo if it helps explain the problem.
+                </li>
+
+                <li>
+                    Click <strong>Submit Request</strong>.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- ==========================
+             VIEW REQUESTS
+        =========================== -->
+
+        <section class="content-card">
+
+            <h2>
+                How to View My Requests
+            </h2>
+
+            <p>
+                To view the maintenance requests submitted by you:
+            </p>
+
+            <ol>
+
+                <li>
+                    Click on <strong>My Requests</strong>.
+                </li>
+
+                <li>
+                    You can see all your submitted requests.
+                </li>
+
+                <li>
+                    Use the search box to find a particular request.
+                </li>
+
+                <li>
+                    Use the filter to view requests by status.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- ==========================
+             TRACK REQUEST
+        =========================== -->
+
+        <section class="content-card">
+
+            <h2>
+                How to Track a Request
+            </h2>
+
+            <p>
+                Every submitted maintenance request has a unique Request ID.
+            </p>
+
+            <ol>
+
+                <li>
+                    Go to the <strong>Dashboard</strong>.
+                </li>
+
+                <li>
+                    Find the <strong>Track Request</strong> section.
+                </li>
+
+                <li>
+                    Enter your Request ID.
+                </li>
+
+                <li>
+                    Click <strong>Track</strong>.
+                </li>
+
+                <li>
+                    The current status of your request will be displayed.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- ==========================
+             REQUEST STATUS
+        =========================== -->
+
+        <section class="content-card">
+
+            <h2>
+                Request Status
+            </h2>
+
+            <ul>
+
+                <li>
+                    <strong>Pending:</strong>
+                    Your request has been submitted and is waiting for action.
+                </li>
+
+                <li>
+                    <strong>In Progress:</strong>
+                    The maintenance team is working on the issue.
+                </li>
+
+                <li>
+                    <strong>Completed:</strong>
+                    The maintenance work has been completed.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ==========================
+             IMPORTANT TIPS
+        =========================== -->
+
+        <section class="content-card">
+
+            <h2>
+                Important Tips
+            </h2>
+
+            <ul>
+
+                <li>
+                    Enter the correct room number and location.
+                </li>
+
+                <li>
+                    Provide a clear description of the problem.
+                </li>
+
+                <li>
+                    Upload a clear photo when required.
+                </li>
+
+                <li>
+                    Check whether the same problem has already been reported.
+                </li>
+
+                <li>
+                    Keep your Request ID for future reference.
+                </li>
+
+                <li>
+                    Do not submit duplicate requests for the same problem.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- ==========================
+             SUPPORT
+        =========================== -->
+
+        <section class="content-card">
+
+            <h2>
+                Need Further Assistance?
+            </h2>
+
+            <p>
+                If you are unable to submit a request or the issue requires
+                immediate attention, contact the concerned college staff or
+                maintenance department.
+            </p>
+
+            <p>
+                Please provide your <strong>Request ID</strong> when asking
+                about an already submitted request.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer class="simple-footer">
+
+        College Maintenance Request System
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

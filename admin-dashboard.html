@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        College Maintenance Request System - Admin
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="app-page">
+
+
+<header class="app-header">
+
+    <div class="college-brand">
+
+        <img
+            src="phcet.jpeg"
+            alt="College Logo"
+        >
+
+        <div>
+
+            <h2>
+                Pillai HOC College of Engineering and Technology
+            </h2>
+
+            <p>
+                College Maintenance Request System
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="admin-head-right">
+
+        <span class="admin-label">
+            👨‍💼 Administrator
+        </span>
+
+        <button
+            type="button"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="page-shell">
+
+
+    <!-- WELCOME SECTION -->
+
+    <section class="welcome-banner">
+
+        <div>
+
+            <h1>
+                Admin Dashboard
+            </h1>
+
+            <p>
+                Manage and monitor college maintenance requests.
+            </p>
+
+        </div>
+
+        <div class="welcome-icon">
+            📊
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="stats-grid">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📋
+            </div>
+
+            <h3>
+                Total Requests
+            </h3>
+
+            <strong id="adminTotal">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⏳
+            </div>
+
+            <h3>
+                Pending
+            </h3>
+
+            <strong id="adminPending">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🔧
+            </div>
+
+            <h3>
+                In Progress
+            </h3>
+
+            <strong id="adminProgress">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ✅
+            </div>
+
+            <h3>
+                Completed
+            </h3>
+
+            <strong id="adminCompleted">
+                0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- REQUEST TABLE -->
+
+    <section class="content-card admin-table-card">
+
+        <h2>
+            Maintenance Requests
+        </h2>
+
+        <p>
+            View submitted requests and update their current status.
+        </p>
+
+
+        <div class="table-wrap">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Request ID
+                        </th>
+
+                        <th>
+                            User
+                        </th>
+
+                        <th>
+                            Issue
+                        </th>
+
+                        <th>
+                            Location
+                        </th>
+
+                        <th>
+                            Category
+                        </th>
+
+                        <th>
+                            Evidence
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Last Updated
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody
+                    id="adminRequestTable"
+                ></tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ADMIN FEATURES -->
+
+    <section class="admin-feature-grid">
+
+
+        <!-- USER MANAGEMENT -->
+
+        <a
+            class="feature-card"
+            href="admin-users.html"
+        >
+
+            <div class="feature-icon">
+                👥
+            </div>
+
+            <h3>
+                User Management
+            </h3>
+
+            <p>
+                View users who have submitted maintenance requests.
+            </p>
+
+        </a>
+
+
+        <!-- REQUEST EVIDENCE -->
+
+        <a
+            class="feature-card"
+            href="admin-evidence.html"
+        >
+
+            <div class="feature-icon">
+                📷
+            </div>
+
+            <h3>
+                Request Evidence
+            </h3>
+
+            <p>
+                Review photos uploaded with maintenance requests.
+            </p>
+
+        </a>
+
+
+        <!-- REQUEST TRACKING -->
+
+        <a
+            class="feature-card"
+            href="admin-tracking.html"
+        >
+
+            <div class="feature-icon">
+                📈
+            </div>
+
+            <h3>
+                Request Tracking
+            </h3>
+
+            <p>
+                Monitor the progress of maintenance work.
+            </p>
+
+        </a>
+
+
+    </section>
+
+
+</main>
+
+
+<footer class="simple-footer">
+
+    College Maintenance Request System
+    &nbsp; | &nbsp;
+    Administrator Dashboard
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
